@@ -220,7 +220,7 @@ class MiniGraphCard extends LitElement {
     return show.name || (show.icon && align_icon !== 'state')
       ? html`
           <div class="header flex" loc=${align_header} style="font-size: ${font_size_header}px;">
-            ${this.renderName()} ${align_icon !== 'state' ? this.renderIcon() : ''}
+            ${this.renderName()} ${align_icon !== 'state' ? this.renderStates() : ''}
           </div>
         `
       : '';
@@ -1077,13 +1077,13 @@ class MiniGraphCard extends LitElement {
   }
 }
 
-customElements.define('mini-graph-card', MiniGraphCard);
+customElements.define('mini-graph-card-new', MiniGraphCard);
 
 // Configure the preview in the Lovelace card picker
 window.customCards = window.customCards || [];
 window.customCards.push({
-  type: 'mini-graph-card',
-  name: 'Mini Graph Card',
+  type: 'mini-graph-card-new',
+  name: 'Mini Graph Card New',
   preview: false,
   description: 'The Mini Graph card is a minimalistic and customizable graph card',
 });
