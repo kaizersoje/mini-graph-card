@@ -202,7 +202,7 @@ class MiniGraphCard extends LitElement {
   renderWarnings() {
     return html`
       <hui-warning>
-        <div>mini-graph-card</div>
+        <div>mini-graph-card-new</div>
         ${this.config.entities.map((_, index) => (!this.entity[index] ? html`
           <div>
             Entity not available: ${this.config.entities[index].entity}
@@ -1077,13 +1077,13 @@ class MiniGraphCard extends LitElement {
   }
 }
 
-customElements.define('mini-graph-card', MiniGraphCard);
+customElements.define('mini-graph-card-new', MiniGraphCard);
 
 // Configure the preview in the Lovelace card picker
 window.customCards = window.customCards || [];
 window.customCards.push({
-  type: 'mini-graph-card',
-  name: 'Mini Graph Card',
+  type: 'mini-graph-card-new',
+  name: 'Mini Graph Card New',
   preview: false,
   description: 'The Mini Graph card is a minimalistic and customizable graph card',
 });
