@@ -25,7 +25,7 @@ import {
   log,
 } from './utils';
 
-class MiniGraphCard extends LitElement {
+class MiniGraphCardNew extends LitElement {
   constructor() {
     super();
     this.id = Math.random()
@@ -1077,7 +1077,7 @@ class MiniGraphCard extends LitElement {
   }
 }
 
-customElements.define('mini-graph-card-new', MiniGraphCard);
+customElements.define('mini-graph-card-new', MiniGraphCardNew);
 
 // Configure the preview in the Lovelace card picker
 window.customCards = window.customCards || [];
