@@ -19,7 +19,7 @@ export default {
   output: {
     file: 'dist/mini-graph-card-bundle.js',
     format: 'umd',
-    name: 'MiniGraphCard',
+    name: 'MiniGraphCardNew',
     sourcemap: dev ? true : false,
   },
   plugins: [
