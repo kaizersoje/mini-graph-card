@@ -4,7 +4,7 @@ import { decompress } from './utils';
 import { version } from '../package.json';
 
 localForage.config({
-  name: 'mini-graph-card',
+  name: 'mini-graph-card-new',
   version: 1.0,
   storeName: 'entity_history_cache',
   description: 'Mini graph card uses caching for the entity history',
